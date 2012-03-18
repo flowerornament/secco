@@ -29,4 +29,5 @@ I wanted to make a simple 1-page website and existing static site generators fel
 ## Troubleshooting
 
 Q: I get a "Cannot call method 'indexOf' of undefined" error on generate.
+
 A: You need an extra space between the YAML and the content in one of your content files.
