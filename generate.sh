@@ -1,10 +1,11 @@
 #!/bin/bash
 
+# site generator script
+
 # growl
 growlnotify -t secco -m 'generating site'
 
-# site generator script
-
+# variables
 OUT_DIR=./out
 SRC_DIR=./src
 
