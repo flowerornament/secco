@@ -34,6 +34,7 @@ git clone git@github.com:msutherl/secco.git
 
 ## Wishlist
 
+- Installation from npm
 - Faster watching (may try watchr)
 - Faster compiling
 	- compile only files that changed

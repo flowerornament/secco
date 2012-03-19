@@ -32,17 +32,17 @@ templates      = _.map(templatePaths, (path) -> return fs.readFileSync(templateD
 templateArray  = _.zip(templateNames, templates)
 
 templateObject = {}
-_.each(templateArray, (template, i, list) -> templateObject[list[i][0]] = list[i][1])
+_.each(templateArray, (file, i, templateList) -> templateObject[templateList[i][0]] = templateList[i][1])
 
-pages = _.map(contentJSON, (page, i, list) ->
-	return cc.render(templateObject[list[i].template],
+pages = _.map(contentJSON, (file, i) ->
+	return cc.render(templateObject[file.template],
 		content: contentParsed[i],
-		title:   list[i].title,
-		date:    list[i].date,
-		meta:    list[i].meta
+		title:   file.title,
+		date:    file.date,
+		meta:    file.meta
 	)
 )
 
 # Render
 
-_.each(pages, (page, i, list) -> fs.writeFileSync(outputDir + contentNames[i] + ".html", list[i], 'utf8'))
+_.each(pages, (page, i) -> fs.writeFileSync(outputDir + contentNames[i] + ".html", page, 'utf8'))
