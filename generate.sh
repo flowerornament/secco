@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# growl
+growlnotify -t secco -m 'generating site'
+
 # site generator script
 
 OUT_DIR=./out
@@ -12,7 +15,9 @@ rm -rf $OUT_DIR
 mkdir $OUT_DIR
 mkdir $OUT_DIR/styles
 mkdir $OUT_DIR/scripts
-mkdir $OUT_DIR/public
+
+# public files
+cp -r $SRC_DIR/public/* $OUT_DIR
 
 # styles
 STYLUS_FILES=$SRC_DIR/styles/*
@@ -32,5 +37,8 @@ if [ -e $CONTENT_FILES ]; then
 	./compile.coffee
 fi
 
-# public files
-cp -r $SRC_DIR/public/* $OUT_DIR
+# growl
+growlnotify -t secco -m 'site generated'
+
+# upload to server
+./upload.sh

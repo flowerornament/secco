@@ -3,6 +3,7 @@
 http = require("http")
 fs = require("fs")
 path = require("path")
+mime = require("mime")
 
 http.createServer((request, response) ->
 	# console.log "request" 
@@ -10,12 +11,7 @@ http.createServer((request, response) ->
 	filePath = basePath + request.url
 	filePath = basePath + "/index.html" if filePath is basePath + "/"
 	extname = path.extname(filePath)
-	contentType = "text/html"
-	switch extname
-		when ".js"
-			contentType = "text/javascript"
-		when ".css"
-			contentType = "text/css"
+	contentType = mime.lookup(extname)
 	path.exists filePath, (exists) ->
 		if exists
 			fs.readFile filePath, (error, content) ->
@@ -29,6 +25,6 @@ http.createServer((request, response) ->
 		else
 			response.writeHead 404
 			response.end()
-).listen 53660
+).listen 8888
 
-console.log "server running at http://127.0.0.1:53660/"
+console.log "server running at http://127.0.0.1:8888/"

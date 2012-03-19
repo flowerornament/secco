@@ -13,18 +13,30 @@ I wanted to make a simple 1-page website and existing static site generators fel
 - mini node.js web-server
 - super minimal code-base for maximum comprehensibility
 - compiler written in functional style with underscore.js
+- automated uploading (rsync)
+- growl notification
 
 [1] formerly coffeekup
 
 ## Requirements
 
 - node.js
-- coffeescript
-- coffeecup
-- stylus
-- underscore.js
-- node-markdown
-- props
+	- coffeescript
+	- coffeecup
+	- stylus
+	- underscore.js
+	- node-markdown
+	- props
+	- mime
+- rsync
+
+## Wishlist
+
+- Faster watching (may try watchr)
+- Faster compiling
+	- compile only files that changed
+	- test and optimize existing code
+- Document model so that templates can be powerful
 
 ## Troubleshooting
 
