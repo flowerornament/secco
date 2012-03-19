@@ -18,35 +18,11 @@ I wanted to make a simple 1-page website and existing static site generators fel
 
 [1] formerly coffeekup
 
-## Requirements
-
-- node.js
-	- coffeescript
-	- coffeecup
-	- stylus
-	- underscore.js
-	- node-markdown
-	- props
-	- mime
-- rsync
-- [growlnotify](http://growl.info/extras.php)
-
 ## Install
 
 1. Install [node.js](http://nodejs.org/) from an [installer](http://nodejs.org/#download) or with your favorite [package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager)
 2. Install [npm](http://npmjs.org/) (prior to installation, I recommend running <code>sudo chown -R $USER /usr/local</code> so that you don't need to use <code>sudo</code> with <code>npm</code>)
-3. Install dependencies
-
-~~~
-npm install -g coffeescript
-npm install -g coffeecup
-npm install -g stylus
-npm install -g underscore
-npm install -g node-markdown
-npm install -g props
-npm install -g mime
-~~~
-
+3. Install dependencies <code>npm install -g coffeescript coffeecup stylus underscore node-markdown props mime</code>code>
 4. Install [growlnotify](http://growl.info/extras.php)
 5. Install <code>rsync</code> if you don't have it
 6. Optionally [fork](https://github.com/msutherl/secco/fork_select) secco
