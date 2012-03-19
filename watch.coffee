@@ -11,7 +11,7 @@ basePath = '/src/'
 console.log "watching " + process.cwd() + basePath
 
 watchr.watch (process.cwd() + basePath), ->
-	command = "./compile.sh"
+	command = "./generate.sh"
 	console.log command
 	
 	child = exec(command, (error, stdout, stderr) ->
