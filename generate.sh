@@ -33,4 +33,4 @@ if [ -e $CONTENT_FILES ]; then
 fi
 
 # public files
-cp -r $SRC_DIR/public $OUT_DIR
+cp -r $SRC_DIR/public/* $OUT_DIR
