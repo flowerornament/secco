@@ -6,7 +6,7 @@ exec = require('child_process').exec
 coffeescript = require('coffee-script')
 watchr = require('watchr')
 
-basePath = '/out/'
+basePath = '/src/'
 
 console.log "watching " + process.cwd() + basePath
 
