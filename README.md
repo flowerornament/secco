@@ -2,10 +2,6 @@
 
 minimalist static site generator
 
-## Why
-
-I wanted to make a simple 1-page website and existing static site generators felt overkill.
-
 ## Features
 
 - create static website with markdown, coffecup[1], stylus and coffeescript
