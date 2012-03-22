@@ -1,6 +1,6 @@
 # secco
 
-secco is a minimalist static site generator
+minimalist static site generator
 
 ## Why
 
