@@ -1,0 +1,26 @@
+{
+  "name": "secco",
+  "version": "0.0.1",
+  "description": "Minimalist static site generator.",
+  "main": "./out/index.html",
+  "dependencies": {
+    "coffeecup": "~0.3.19",
+    "mime": "~1.2.9",
+    "node-markdown": "~0.1.1",
+    "props": "~0.3.0",
+    "stylus": "~0.32.1",
+    "underscore": "~1.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/msutherl/secco.git"
+  },
+  "author": "Morgan Sutherland",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "61caf7e226db838eee9a9dc13fcbe6232b7b99a8"
+}
