@@ -27,18 +27,3 @@ minimalist static site generator
 ~~~
 git clone git@github.com:msutherl/secco.git
 ~~~
-
-## Wishlist
-
-- Installation from npm
-- Faster watching (may try watchr)
-- Faster compiling
-	- compile only files that changed
-	- test and optimize existing code
-- Document model so that templates can be powerful
-
-## Troubleshooting
-
-Q: I get a "Cannot call method 'indexOf' of undefined" error on generate.
-
-A: You need an extra space between the YAML and the content in one of your content files.
